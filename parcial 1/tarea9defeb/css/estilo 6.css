@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.contenedor-grid{
+    width: 100vw;
+    height: 100vh;
+    border: 2px solid black;
+    display: grid;
+    gap: 10px;
+
+    grid-template-columns: repeat(6,1fr);
+     grid-template-areas:
+     "uno uno uno dos dos  dos"
+     "tres tres cuatro cuatro cinco cinco";
+}
+.contenedor-grid div{
+    border: 2px solid black;
+    font-size: 50px;
+}
+
+
+.elemento1{
+    grid-area: uno;
+    background: red;
+     position: relative;
+     transition: right .5s ease-in-out;
+    
+}
+.elemento2{
+    grid-area: dos;
+    background: pink;
+     transition: all 3s ease;
+    
+    
+}
+.activo{
+    background-color: yellow;
+    transform: scale(1.5);
+}
+.elemento3{
+    grid-area: tres;
+    background: rgb(0, 233, 245);
+        transition: all 2s ease;
+}
+.cargando{
+    transform: scale(1.2);
+    background-color:orangered ;
+}
+.elemento4{
+    grid-area: cuatro;
+    background: rgb(123, 85, 85);
+   
+}
+.mover{
+    transform: scale(1.1) rotate(10deg);
+
+}
+.elemento5{
+    grid-area: cinco;
+    background: rgb(19, 0, 192);
+     opacity: 0;
+   transform: translateY(50px);
+    transition: all 4s ease;
+}
+.visible{
+    opacity: 1;
+    transform: translateY(0);
+}
+@media (max-width:400px) {
+    .contenedor-grid{
+        grid-template-areas: "uno"
+        "dos"
+        "tres"
+        "cuatro"
+        "cinco"
+        "seis";
+    }
+    
+}

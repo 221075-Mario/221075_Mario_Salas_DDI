@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(255, 255, 255);
+}
+
+.contenedor {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-areas: 
+        "uno dos tres"
+        "uno dos tres"
+        "cuatro cuatro tres"
+        "cuatro cuatro tres"
+        "cinco seis tres"
+        "cinco seis tres";
+}
+
+.uno {
+    background-color: antiquewhite;
+    grid-area: uno;
+}
+
+.dos {
+    background-color: aqua;
+    grid-area: dos;
+}
+
+.tres {
+    background-color: aquamarine;
+    grid-area: tres;
+}
+
+.cuatro {
+    background-color: rgb(255, 0, 93);
+    grid-area: cuatro;
+}
+
+.cinco {
+    background-color: beige;
+    grid-area: cinco;
+}
+
+.seis {
+    background-color: rgb(255, 140, 0);
+    grid-area: seis;
+}
+
+.contenedor div {
+    border: 2px solid seagreen;
+    font-size: 50px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
