@@ -1,0 +1,94 @@
+
+
+.header-mapas {
+    height: 45vh;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo-mapas {
+    position: relative;
+    z-index: 2;
+    color: #E6E6E6;
+    font-size: 8vh;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+.fondo-mapas {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.5);
+    z-index: 1;
+    transform: scale(1);
+}
+
+
+
+.mapas-lista {
+    width: 90%;
+    margin: 8vh auto;
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
+}
+
+
+.mapa-item {
+    display: flex;
+    gap: 4vh;
+    padding: 3vh;
+    background: rgba(255,255,255,0.05);
+    border-radius: 12px;
+    align-items: center;
+    transition: box-shadow 0.4s ease, transform 0.4s ease;
+}
+
+.mapa-item.activo {
+    box-shadow: 0 0 35px rgba(132, 0, 255, 0.6);
+    transform: scale(1.02);
+}
+
+
+
+.mapa-img {
+    width: 220px;
+    height: 130px;
+    border-radius: 8px;
+    flex-shrink: 0;
+    overflow: visible;
+}
+
+.mapa-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    cursor: pointer;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.mapa-img img.mover {
+    transform: scale(1.4);
+    box-shadow: 0 0 40px rgba(132, 0, 255, 0.7);
+    position: relative;
+    z-index: 10;
+}
+
+
+
+.mapa-texto h3 {
+    color: #E6E6E6;
+    font-size: 3vh;
+    margin-bottom: 1vh;
+}
+
+.mapa-texto p {
+    color: #B3B3B3;
+    font-size: 2.2vh;
+    line-height: 1.5;
+}

@@ -1,0 +1,70 @@
+
+
+.lista-rectangulos {
+    width: 90%;
+    margin: 8vh auto;
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;
+}
+
+
+
+.rectangulo {
+    display: flex;
+    align-items: center;
+    gap: 3vh;
+    padding: 3vh;
+    background: rgba(255,255,255,0.05);
+    border-radius: 12px;
+    cursor: pointer;
+
+    transform: scale(1);
+    opacity: 0.6;
+    transition: 
+        transform 0.35s ease,
+        opacity 0.35s ease,
+        box-shadow 0.35s ease,
+        background 0.35s ease;
+}
+
+.rectangulo.active {
+    transform: scale(1.05);
+    opacity: 1;
+    background: rgba(255,255,255,0.12);
+    box-shadow: 0 0 30px rgba(132, 0, 255, 0.45);
+}
+
+
+
+.thumb {
+    width: 140px;
+    height: 90px;
+    overflow: hidden;
+    border-radius: 8px;
+    flex-shrink: 0;
+}
+
+.thumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.35s ease;
+}
+
+.rectangulo.active .thumb img {
+    transform: scale(1.1);
+}
+
+
+
+.contenido h3 {
+    color: white;
+    font-size: 3vh;
+    margin-bottom: 1vh;
+}
+
+.contenido p {
+    color: #ccc;
+    font-size: 2.2vh;
+}
