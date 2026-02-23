@@ -1,37 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulario dinamicos</title>
-    <link rel="stylesheet" href="css/estilo.css">
+    <title>Formularios dinamicos</title>
 </head>
+
 <body>
-
-<form action="">
-    <label>Nombre:</label>
-    <input type="text" 
-           name="nombre"
-           placeholder="Ingresa el nombre" 
-           id="input-txt-nombre">
-    <br>
-
-    <label>Apellido:</label>
-    <input type="text"
-           id="apellido-guardar"
-           name="apellido"
-           placeholder="Ingresa el apellido"> <br>
-
-           <label for="cantidad_correos">Ingrese la cantidad de correos que va ingresar:</label>
-           <input type="number" name="cantidad_correos" id="cantidad_correos" onchange="cambiarNumero(event)">
-           <br>
-           <div class="contenedor_correos" id="contenedor_correos"></div>
-           
-           <button id="boton-guardar">Guardar</button>
-</form>
-
-
-
-<script src="js/scrip.js"></script>
+    <form id="form_2">
+        <label for="nombre">Nombre: </label>
+        <input type="text" 
+                name="nombre" 
+                placeholder="Igresa el nombre" 
+                id="input_txt_nombre">       
+        <br>
+        <label for="apellido">Apellido: </label>
+        <input type="text" 
+                name="apellido"
+                placeholder="ingresa el Apellido"     
+                id="input_txt_apellido">
+        <br>
+                <label for="correo">Correo: </label>
+        <input type="email" 
+                name="correo"
+                placeholder="ingresa el correo"     
+                id="input_correo">
+        <br>
+                <label for="contraseña">Contraseña: </label>
+        <input type="password" 
+                name="contraseña"
+                placeholder="ingresa la contraseña"     
+                id="input_contraseña">
+        <br>
+        <label for="cantidad_correos">Ingrese la cantidad de correos que va a ingresar</label>        
+        <input type="number" name="cantidad_correos" 
+        id="cantidad_correos" onchange="cambiarNumero(event)">
+        <br>
+        <div class="contenedor_correos" id="contenedor_correos">
+            
+        </div>
+        <div id="contenedor_usuarios">
+        </div>
+        <br>
+        <button type="button" onclick="leerDatos()">Guardar Datos</button>
+    </form>
 </body>
+<script src="js/script.js"></script>
+
 </html>
