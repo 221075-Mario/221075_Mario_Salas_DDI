@@ -1,0 +1,22 @@
+[
+  {
+    "nombre": "Challenger",
+    "descripcion": "Motor 3.6 v6 con 305 caballos de fuerza",
+    "imagen": "recursos/descarga.jpg"
+  },
+  {
+    "nombre": "Challenger Hemmi",
+    "descripcion": "Motor 5.7 v8 con 375 caballos de fuerza",
+    "imagen": "recursos/images.jpg"
+  },
+  {
+    "nombre": "Challenger SRT",
+    "descripcion": "Motor 6.4 v8 con 485 caballos de fuerza",
+    "imagen": "recursos/img.webp"
+  },
+  {
+    "nombre": "Challenger Hellcat",
+    "descripcion": "Motor 6.4 supercargado v8 con 717 caballos de fuerza",
+    "imagen": "recursos/descarga.jpg"
+  }
+]
